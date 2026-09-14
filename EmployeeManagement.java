@@ -149,9 +149,9 @@ public class EmployeeManagement {
 
         Scanner sc = new Scanner(System.in);
 
-        // ============================
+        
         // GET EMPLOYEE DETAILS
-        // ============================
+        
 
         System.out.println("===== ENTER EMPLOYEE DETAILS =====");
 
@@ -168,9 +168,9 @@ public class EmployeeManagement {
         double salary = sc.nextDouble();
 
 
-        // ============================
+    
         // RUNTIME POLYMORPHISM
-        // ============================
+    
 
         Employee employee =
                 new Manager(name, employeeId, teamSize, salary);
@@ -183,9 +183,9 @@ public class EmployeeManagement {
                 + employee.calculateSalary());
 
 
-        // ============================
+        
         // INTERFACE DEMO
-        // ============================
+    
 
         Manager manager = (Manager) employee;
 
@@ -194,9 +194,9 @@ public class EmployeeManagement {
         manager.printDocument();
 
 
-        // ============================
+    
         // PAYROLL
-        // ============================
+        
 
         PayrollRule payroll =
                 new ManagerPayroll();
@@ -213,9 +213,9 @@ public class EmployeeManagement {
                 + payroll.calculateExtraBonus(employeeSalary));
 
 
-        // ============================
+        
         // PAYMENT + EXCEPTION
-        // ============================
+    
 
         System.out.println("\n===== PAYMENT =====");
 
@@ -239,9 +239,9 @@ public class EmployeeManagement {
         }
 
 
-        // ============================
+    
         // PACKAGE DEMO
-        // ============================
+    
 
         System.out.println("\n===== UTILITY PACKAGE =====");
 
@@ -260,9 +260,9 @@ public class EmployeeManagement {
                 + StringHelper.reverse(word));
 
 
-        // ============================
+    
         // FILE I/O - WRITE
-        // ============================
+    
 
         System.out.println("\n===== FEEDBACK =====");
 
