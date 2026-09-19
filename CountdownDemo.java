@@ -1,8 +1,8 @@
-// Concept: Multithreading, Thread Class, run(), start(), sleep() and Thread Names
+
 
 class CountdownThread extends Thread {
 
-    // Constructor to set the thread name
+    
     CountdownThread(String name) {
         super(name);
     }
@@ -10,7 +10,7 @@ class CountdownThread extends Thread {
     @Override
     public void run() {
 
-        // Count down from 5 to 1
+
         for (int i = 5; i >= 1; i--) {
 
             System.out.println(
@@ -18,7 +18,7 @@ class CountdownThread extends Thread {
             );
 
             try {
-                // Pause for 500 milliseconds
+               
                 Thread.sleep(500);
 
             } catch (InterruptedException e) {
